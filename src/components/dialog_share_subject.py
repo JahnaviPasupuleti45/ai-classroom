@@ -7,8 +7,8 @@ import io
 
 @st.dialog("Share Class Link")
 def share_subject_dialog(subject_name, subject_code):
-    app_domain="snapclassmain-0.streamlit.app"
-    join_url=f"{app_domain}/?join-code={subject_code}"
+    app_host=st.context.headers.get("Host", "localhost:8501")
+    join_url=f"https://{app_host}/?join-code={subject_code}"
     
     st.markdown("### Scan to join")
     qr=segno.make(join_url)
