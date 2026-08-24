@@ -153,7 +153,7 @@ def student_screen():
     if show_registration:
         with st.container(border=True):
             st.header("Register New Profile")
-            new_name=st.text_input("Enter your name", placeholder='E.g Haneesh Cholam')
+            new_name=st.text_input("Enter your name", placeholder='E.g Jahnavi')
             
             st.subheader("Optional : Voice Enrollment")
             st.info("Enroll for voice only attendance")
@@ -161,7 +161,7 @@ def student_screen():
             audio_data=None
             
             try:
-                audio_data=st.audio_input("Record a short phrase like I am present, My name Haneesh.")
+                audio_data=st.audio_input("Record a short phrase like I am present, My name Jahnavi.")
             except Exception as e:
                 st.error("Audio Data Failed!")
                 
