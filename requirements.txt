@@ -1,0 +1,24 @@
+# CPU-only PyTorch: the default Linux wheel pulls GBs of CUDA libraries
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+streamlit>=1.60.0
+# Utilities
+numpy
+pandas
+
+# Face Recognition
+scikit-learn
+dlib-bin
+git+https://github.com/ageitgey/face_recognition_models
+setuptools<70.0.0
+
+supabase
+bcrypt
+
+segno
+pillow
+
+# Voice Recognition
+torch
+librosa
+resemblyzer
